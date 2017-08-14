@@ -1,0 +1,29 @@
+{
+  "name": "pianoscore.com",
+  "version": "1.0.0",
+  "description": "pianoscore.com project, beginning with composers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zalaniz2/pianoscore.com.git"
+  },
+  "keywords": [
+    "Piano"
+  ],
+  "author": "Zach Alaniz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zalaniz2/pianoscore.com/issues"
+  },
+  "homepage": "https://github.com/zalaniz2/pianoscore.com#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "express-ejs-layouts": "^2.3.1",
+    "mongoose": "^4.11.6"
+  }
+}
