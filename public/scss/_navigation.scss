@@ -1,0 +1,158 @@
+//desktop navigation
+$bgDefault      : #212121;
+$bgHighlight    : #000000;
+$colDefault     : #ecf0f1;
+$colHighlight   : #fbc02d;
+$dropDown       : false;
+.navbar-default {
+  background-color: $bgDefault;
+  border-color: $bgHighlight;
+  .navbar-brand {
+    color: $colDefault;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 25px;
+    &:hover, &:focus {
+      color: $colHighlight; }}
+  .navbar-text {
+    color: $colDefault; }
+  .navbar-nav {
+    > li {
+      > a {
+        color: $colDefault;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 25px;
+        &:hover,  &:focus {
+          color: $colHighlight; }}
+      @if $dropDown {
+        > .dropdown-menu {
+          background-color: $bgDefault;
+          > li {
+            > a {
+              color: $colDefault;
+              &:hover,  &:focus {
+                color: $colHighlight;
+                background-color: $bgHighlight; }}
+            &.divider {
+              background-color: $bgHighlight;}}}}}
+    @if $dropDown {
+      .open .dropdown-menu > .active {
+        > a, > a:hover, > a:focus {
+          color: $colHighlight;
+          background-color: $bgHighlight; }}}
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}
+    > .open {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}}
+  .navbar-toggle {
+    border-color: $bgHighlight;
+    &:hover, &:focus {
+      background-color: $bgHighlight; }
+    .icon-bar {
+      background-color: $colDefault; }}
+  .navbar-collapse,
+  .navbar-form {
+    border-color: $colDefault; }
+  .navbar-link {
+    color: $colDefault;
+    &:hover {
+      color: $colHighlight; }}}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu {
+    > li > a {
+      color: $colDefault;
+
+      &:hover, &:focus {
+        color: $colHighlight; }}
+
+    > .active {
+      > a, > a:hover, > a:focus {
+
+        color: $colHighlight;
+        background-color: $bgHighlight; }}}
+
+  .navbar-default{
+      .navbar-brand{
+
+      font-size: 21px;
+      padding: 23px;
+    }
+
+    .navbar-toggle{
+      margin: 15px;
+      border: none;
+      &:hover{
+        background-color: $bgDefault;
+        .icon-bar{
+          background-color: $colHighlight;
+        }
+      }
+      .icon-bar{
+        padding: 1.5px;
+      }
+    }
+  }
+}
+// end desktop navigation
+
+//mobile navigation
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: $bgDefault; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 70px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+hr{
+  background-color: $bgHighlight ;
+  border-color: $bgHighlight;
+  color: $bgHighlight;
+  height: 2px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: $colDefault;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: $colHighlight;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+//end mobile navigation
