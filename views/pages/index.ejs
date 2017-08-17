@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Home | Piano Score</title>
 
     <!-- Latest compiled and minified CSS -->
@@ -42,7 +43,7 @@
 
     <!-- mobile navigation -->
     <div id="mySidenav" class="sidenav">
-      <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">&times;</a>
       <a href="#">Home</a>
       <a href="#">Composers</a>
       <a href="#">API</a>
@@ -56,6 +57,49 @@
       </a>
     </div>
     <!-- end mobile navigation -->
+
+    <!-- body content -->
+    <div class="row">
+      <div class="col-md-12" id="contain-head">
+        <div class="jumbotron" id="header">
+          <div class="container" align="center">
+              <h2>Discover Classical Music.</h2>
+              <button type="button" name="button" class="btn btn-lg btn-warning">Composers</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="intro">
+    <div class="container">
+      <div class="hidden-lg col-md-12" id="intro-md">
+        <h1 class="text-center">Piano Score is for..</h1>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12" id="introduction">
+        <h1 class="text-center hidden-md hidden-sm hidden-xs">Piano Score is for..</h1>
+        <h3>Learning</h3>
+        <p class="well">Read and familiarize yourself with the greatest piano composers in history.</p>
+        <h3>Listening</h3>
+        <p class="well">Complement your learning with audio and video of each composer's greatest pieces.</p>
+        <h3>Developing</h3>
+        <p class="well">Spread the love of classical music by accessing the Piano Score Api.</p>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 hidden-xs homepage-imgs">
+        <img class="img-responsive" src="/img/frederic-chopin.jpg" alt="Headshot of Frederic Chopin">
+        <img class="img-responsive" src="/img/beethoven.jpg" alt="Headshot of Ludwig von Beethoven">
+        <img class="img-responsive" src="/img/rimsky-korsakov.jpg" alt="Headshot of Rimsky Korsakov">
+        <img class="img-responsive" src="/img/claude-debussy.jpg" alt="Headshot of Claude Debussy">
+      </div>
+      </div>
+      <div class="hidden-md hidden-lg hidden-sm col-xs-12 homepage-imgs">
+        <img class="img-responsive" src="/img/frederic-chopin.jpg" alt="Headshot of Frederic Chopin">
+        <img class="img-responsive" src="/img/beethoven.jpg" alt="Headshot of Ludwig von Beethoven">
+        <img class="img-responsive" src="/img/rimsky-korsakov.jpg" alt="Headshot of Rimsky Korsakov">
+        <img class="img-responsive" src="/img/claude-debussy.jpg" alt="Headshot of Claude Debussy">
+      </div>
+    </div>
+
+    <!-- end body content -->
 
       <!-- JS FILES -->
       <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

@@ -1,0 +1,90 @@
+#contain-head{ // safari fix
+  padding: 0px;
+}
+//homepage heading
+#header{
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('/img/pianoscore.jpg');
+  background-size: cover;
+  background-position: center;
+
+  padding-top: 268px;
+  padding-bottom: 268px;
+
+  h2{
+    color: #ecf0f1;
+    font-weight: bolder;
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  #header{
+    h2{
+      font-size: 40px;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  #header{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    h2{
+      font-size: 27px;
+    }
+  }
+}
+//end homepage heading
+
+//homepage intro
+#intro{
+  .well{
+  }
+  #intro-md{
+    h1{
+      font-weight: bold;
+      color: $bgDefault;
+
+    }
+  }
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  #introduction{
+    h1{
+      color: $bgDefault;
+      font-weight: bolder;
+    }
+    h3{
+      font-weight: bold;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+    p{
+      font-weight: bolder;
+      color: $bgDefault;
+    }
+  }
+  .homepage-imgs{
+    img{
+      float:left;
+      width: 50%;
+      height: 50%;
+    }
+    margin-top: 68px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  #intro{
+    .homepage-imgs{
+      margin-top: 89px;
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  #intro{
+    padding-top: 20px;
+    .homepage-imgs{
+      margin-top: 35px;
+    }
+  }
+
+}

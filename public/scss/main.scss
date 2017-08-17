@@ -1,6 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-@import 'navigation';
+$bgDefault      : #212121;
+$bgHighlight    : #000000;
+$colDefault     : #ecf0f1;
+$colHighlight   : #fbc02d; //main theme colors
 
 body{
   font-family: 'Poppins', sans-serif; /* main font! */
+  width: 100%;  //resets;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden !important;
 }
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import 'navigation';
+@import 'homepage';
