@@ -6,49 +6,40 @@
   background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('/img/pianoscore.jpg');
   background-size: cover;
   background-position: center;
-
   padding-top: 268px;
   padding-bottom: 268px;
-
   h2{
     color: #ecf0f1;
     font-weight: bolder;
     font-size: 50px;
   }
 }
-@media only screen and (max-width: 991px) {
-  #header{
-    h2{
-      font-size: 40px;
-    }
-  }
-}
-@media only screen and (max-width: 600px) {
-  #header{
-    padding-top: 200px;
-    padding-bottom: 200px;
-    h2{
-      font-size: 27px;
-    }
-  }
-}
-//end homepage heading
+//end header
 
 //homepage intro
 #intro{
-  .well{
-  }
   #intro-md{
     h1{
       font-weight: bold;
       color: $bgDefault;
-
     }
   }
   padding-top: 40px;
   padding-bottom: 40px;
-
   #introduction{
+    .well{
+      -o-transition:.2s;
+      -ms-transition:.2s;
+      -moz-transition:.2s;
+      -webkit-transition:.2s;
+      /* ...and now for the proper property */
+      transition:.2s;
+      border: none;
+        &:hover{
+          background-color: $bgDefault;
+          color: $colHighlight !important;
+        }
+    }
     h1{
       color: $bgDefault;
       font-weight: bolder;
@@ -71,6 +62,135 @@
     }
     margin-top: 68px;
   }
+  .box {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  .box::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      box-shadow: 5px 5px 5px black;
+      opacity: 0;
+      -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .box:hover {
+      -webkit-transform: scale(1.02, 1.02);
+      transform: scale(1.02, 1.02);
+    }
+    .box:hover::after {
+      opacity: 0;
+    }
+
+}
+//end intro
+
+//start column section
+#three-row{
+  background-color: #f5f5f5;
+  color: $bgDefault;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0px;
+
+  .col-md-4{
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    /* ...and now for the proper property */
+    transition:.2s;
+
+    span{
+      font-size: 65px;
+      padding: 25px;
+    }
+    h5{
+      font-weight: bold;
+      padding: 21px;
+    }
+    &:hover{
+      background-color: $bgDefault;
+      color: $colHighlight;
+    }
+  }
+}
+//end 3 column section
+
+//read more section
+#more-about{
+  padding: 50px;
+  .col-md-12{
+    h2{
+      font-weight: bold;
+      display: inline;
+      padding: 10px;
+    }
+    button{
+      margin-left: 50px;
+    }
+  }
+}
+//end read more section
+
+//footer
+footer{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: $bgHighlight;
+  border-top: 5px solid $bgDefault;
+  border-bottom: 5px solid $bgDefault;
+
+  p{
+    display: inline;
+    margin: 20px;
+    font-weight: bold;
+    color: $colHighlight;
+    font-size: 20px;
+  }
+  a{
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    /* ...and now for the proper property */
+    transition:.2s;
+    color: white;
+    &:hover{
+      color: $colHighlight;
+      text-decoration: none;
+    }
+  }
+  #copyright{
+    color: grey;
+    position: relative;
+    top: 28px;
+    font-size: 14px !important;
+  }
+}
+//end footer
+
+@media only screen and (max-width: 991px) {
+  #header{
+    h2{
+      font-size: 40px;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  #header{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    h2{
+      font-size: 27px;
+    }
+  }
 }
 @media only screen and (max-width: 1199px) {
   #intro{
@@ -86,5 +206,48 @@
       margin-top: 35px;
     }
   }
-
+}
+@media only screen and (max-width: 767px) {
+  #more-about{
+    .col-md-12{
+      button{
+        margin: 25px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 596px) {
+  #more-about{
+    padding: 25px;
+    .col-md-12{
+      h2{
+        font-size: 23px;
+      }
+      .btn{
+        padding: 10px 18px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 596px) {
+  #more-about{
+    .col-md-12{
+      h2{
+        font-size: 18px;
+      }
+      .btn{
+        padding:8px 15px;
+        font-weight: 500;
+        font-size: 15px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 466px) {
+  footer{
+    p{
+      font-size: 14px;
+    }
+  }
 }

@@ -1,0 +1,45 @@
+$bgDefault      : #212121;
+$bgHighlight    : #000000;
+$colDefault     : #ecf0f1;
+$colHighlight   : #fbc02d; //main theme colors
+
+body{
+  font-family: 'Poppins', sans-serif; /* main font! */
+  width: 100%;  //resets;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden !important;
+}
+
+//Button style //
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 800;
+    letter-spacing: 1px;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    /* ...and now for the proper property */
+    transition:.2s;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0px;
+}
+.btn-warning {
+    background: $colHighlight;
+    color: white;
+}
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open > .dropdown-toggle.btn-warning {
+    background: $bgDefault;
+}
+.btn-warning:active, .btn-warning.active {
+    background: #007299;
+    box-shadow: none;
+}
+.btn.sharp {
+  border-radius:0;
+}
+//end button style//
