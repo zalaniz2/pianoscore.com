@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/img/logo2.png" />
+    <title> Home | Piano Score</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- main custom css file  for Piano Score -->
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+
+  <body>
+    <!-- start main navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button onclick="openNav()" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mySideNav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand active" href="#" id="brand">
+            <img src="/img/logo2.png" alt="Piano Score Logo" class="pull-left logo">
+            Piano Score
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav pull-right">
+            <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Composers</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end main navigation -->
+
+    <!-- mobile navigation -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Home</a>
+      <a href="#">Composers</a>
+      <a href="#">API</a>
+      <a href="#">About</a>
+      <div class="container">
+        <hr>
+      </div>
+      <a href="#" id="mobile-logo"><img src="/img/logo2.png" alt="Piano Score Logo" class="logo">
+        Piano Score
+      </a>
+    </div>
+    <!-- end mobile navigation -->
+
+    <!-- body content -->
+    <%-defineContent('homepage')-%> <!-- homepage -->
+
+    <!-- footer -->
+    <footer>
+      <div class="row">
+        <div class="container" align="center">
+          <div class="col-md-12">
+            <p><a href="index.ejs">Home</a></p>
+            <p><a href="#">Composers</a></p>
+            <p><a href="#">API</a></p>
+            <p><a href="#">About</a></p>
+          </div>
+          <div class="col-md-12">
+            <p id="copyright">&copy; 2017 pianoscore.org<p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+      <!-- JS FILES -->
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="/js/mobile-nav.js"></script>
+  </body>
+</html>
