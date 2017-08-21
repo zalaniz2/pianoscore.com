@@ -1,12 +1,12 @@
 // server.js
 var express = require('express');
-//var expLayouts = require('express-ejs-layouts'); future
+var expLayouts = require('express-ejs-layouts');
 var app = express();
 var port = 8080;
 
 //use ejs and express layouts
 app.set('view engine', 'ejs');
-//app.use(expLayouts);once main sections are in place
+app.use(expLayouts);
 
 
 var main_router = require('./app/routes/main_routes');

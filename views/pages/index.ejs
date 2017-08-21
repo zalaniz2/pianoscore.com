@@ -1,150 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/img/logo2.png" />
-    <title> Home | Piano Score</title>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- main custom css file  for Piano Score -->
-    <link rel="stylesheet" href="/css/main.css">
-  </head>
-
-  <body>
-    <!-- start main navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button onclick="openNav()" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mySideNav" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand active" href="#" id="brand">
-            <img src="/img/logo2.png" alt="Piano Score Logo" class="pull-left logo">
-            Piano Score
-          </a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav pull-right">
-            <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Composers</a></li>
-            <li><a href="#">API</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- end main navigation -->
-
-    <!-- mobile navigation -->
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">Home</a>
-      <a href="#">Composers</a>
-      <a href="#">API</a>
-      <a href="#">About</a>
-      <div class="container">
-        <hr>
-      </div>
-      <a id="mobile-logo">
-        <img src="/img/logo2.png" alt="Piano Score Logo" class="logo">
-        Piano Score
-      </a>
-    </div>
-    <!-- end mobile navigation -->
-
-    <!-- body content -->
-    <div class="row">
-      <div class="col-md-12" id="contain-head">
-        <div class="jumbotron" id="header">
-          <div class="container" align="center">
-              <h2>Discover Classical Music.</h2>
-              <button type="button" name="button" class="btn btn-lg btn-warning sharp">Composers</button>
-          </div>
-        </div>
+<%- contentFor('homepage') -%>
+<!-- body content -->
+<div class="row">
+  <div class="col-md-12" id="contain-head">
+    <div class="jumbotron" id="header">
+      <div class="container" align="center">
+          <h2>Discover Classical Music.</h2>
+          <button type="button" name="button" class="btn btn-lg btn-warning sharp">Composers</button>
       </div>
     </div>
-
-    <div class="row" id="intro">
-     <div class="container">
-      <div class="hidden-lg col-md-12" id="intro-md">
-        <h1 class="text-center">Piano Score is for..</h1>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12" id="introduction">
-        <h1 class="text-center hidden-md hidden-sm hidden-xs">Piano Score is for..</h1>
-        <h3>Learning</h3>
-        <p class="well">Read and familiarize yourself with the greatest piano composers in history.</p>
-        <h3>Listening</h3>
-        <p class="well">Complement your learning with audio and video of each composer's greatest pieces.</p>
-        <h3>Developing</h3>
-        <p class="well">Spread the love of classical music by accessing the Piano Score API.</p>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 hidden-xs homepage-imgs box">
-        <img class="img-responsive" src="/img/frederic-chopin.jpg" alt="Headshot of Frederic Chopin">
-        <img class="img-responsive" src="/img/beethoven.jpg" alt="Headshot of Ludwig von Beethoven">
-        <img class="img-responsive" src="/img/rimsky-korsakov.jpg" alt="Headshot of Rimsky Korsakov">
-        <img class="img-responsive" src="/img/claude-debussy.jpg" alt="Headshot of Claude Debussy">
-      </div>
-    </div>
-      <div class="hidden-md hidden-lg hidden-sm col-xs-12 homepage-imgs">
-        <img class="img-responsive" src="/img/frederic-chopin.jpg" alt="Headshot of Frederic Chopin">
-        <img class="img-responsive" src="/img/beethoven.jpg" alt="Headshot of Ludwig von Beethoven">
-        <img class="img-responsive" src="/img/rimsky-korsakov.jpg" alt="Headshot of Rimsky Korsakov">
-        <img class="img-responsive" src="/img/claude-debussy.jpg" alt="Headshot of Claude Debussy">
-      </div>
   </div>
+</div>
 
-    <div class="row" align="center" id="three-row">
-      <div class="col-md-4 col-sm-4">
-          <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
-          <h5>Read about composers with information gathered from reliable sources, which are cited to provide as much accuracy as possible.</h5>
-      </div>
-      <div class="col-md-4 col-sm-4">
-          <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>
-          <h5>Listen to the music through popular outlets, with Spotify embedded playlists and live performances through YouTube videos.</h5>
-      </div>
-      <div class="col-md-4 col-sm-4">
-          <span class="glyphicon glyphicon-cloud-download" aria-hidden="true"></span>
-          <h5>Access the Piano Score public API to spread the love of classical piano on your own personal outlets and projects. </h5>
-      </div>
+<div class="row" id="intro">
+ <div class="container">
+  <div class="hidden-lg col-md-12" id="intro-md">
+    <h1 class="text-center">Piano Score is for..</h1>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-12" id="introduction">
+    <h1 class="text-center hidden-md hidden-sm hidden-xs">Piano Score is for..</h1>
+    <h3>Learning</h3>
+    <p class="well">Read and familiarize yourself with the greatest piano composers in history.</p>
+    <h3>Listening</h3>
+    <p class="well">Complement your learning with audio and video of each composer's greatest pieces.</p>
+    <h3>Developing</h3>
+    <p class="well">Spread the love of classical music by accessing the Piano Score API.</p>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-12 hidden-xs homepage-imgs box">
+    <img class="img-responsive" src="/img/frederic-chopin.jpg" alt="Headshot of Frederic Chopin">
+    <img class="img-responsive" src="/img/beethoven.jpg" alt="Headshot of Ludwig von Beethoven">
+    <img class="img-responsive" src="/img/rimsky-korsakov.jpg" alt="Headshot of Rimsky Korsakov">
+    <img class="img-responsive" src="/img/claude-debussy.jpg" alt="Headshot of Claude Debussy">
+  </div>
+</div>
+  <div class="hidden-md hidden-lg hidden-sm col-xs-12 homepage-imgs">
+    <img class="img-responsive" src="/img/frederic-chopin.jpg" alt="Headshot of Frederic Chopin">
+    <img class="img-responsive" src="/img/beethoven.jpg" alt="Headshot of Ludwig von Beethoven">
+    <img class="img-responsive" src="/img/rimsky-korsakov.jpg" alt="Headshot of Rimsky Korsakov">
+    <img class="img-responsive" src="/img/claude-debussy.jpg" alt="Headshot of Claude Debussy">
+  </div>
+</div>
+
+<div class="row" align="center" id="three-row">
+  <div class="col-md-4 col-sm-4">
+      <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+      <h5>Read about composers with information gathered from reliable sources, which are cited to provide as much accuracy as possible.</h5>
+  </div>
+  <div class="col-md-4 col-sm-4">
+      <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>
+      <h5>Listen to the music through popular outlets, with Spotify embedded playlists and live performances through YouTube videos.</h5>
+  </div>
+  <div class="col-md-4 col-sm-4">
+      <span class="glyphicon glyphicon-cloud-download" aria-hidden="true"></span>
+      <h5>Access the Piano Score public API to spread the love of classical piano on your own personal outlets and projects. </h5>
+  </div>
+</div>
+
+
+<div class="row" id="more-about">
+  <div class="container">
+    <div class="col-md-12 text-center">
+      <h2 class="text-center">Read more about Piano Score</h2>
+      <button type="button" name="button" class="btn btn-lg btn-warning sharp">About</button>
     </div>
-
-
-    <div class="row" id="more-about">
-      <div class="container">
-        <div class="col-md-12 text-center">
-          <h2 class="text-center">Read more about Piano Score</h2>
-          <button type="button" name="button" class="btn btn-lg btn-warning sharp">About</button>
-        </div>
-      </div>
-    </div>
-    <!-- end body content -->
-
-    <!-- footer -->
-    <footer>
-      <div class="row">
-        <div class="container" align="center">
-          <div class="col-md-12">
-            <p><a href="index.ejs">Home</a></p>
-            <p><a href="#">Composers</a></p>
-            <p><a href="#">API</a></p>
-            <p><a href="#">About</a></p>
-          </div>
-          <div class="col-md-12">
-            <p id="copyright">&copy; 2017 pianoscore.org<p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- end footer -->
-
-      <!-- JS FILES -->
-      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-      <script type="text/javascript" src="/js/mobile-nav.js"></script>
-  </body>
-</html>
+  </div>
+</div>
+<!-- end body content -->
