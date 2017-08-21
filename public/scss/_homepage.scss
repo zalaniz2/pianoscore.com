@@ -215,31 +215,40 @@ footer{
       }
     }
   }
+  #intro{
+    #introduction{
+      .well{
+          &:hover{
+            background-color: #f5f5f5; //default
+            color: $bgDefault !important;
+          }
+      }
+    }
+  }
+  #three-row{
+    .col-md-4{
+      &:hover{
+        background-color: #f5f5f5; //default
+        color: $bgDefault;
+      }
+    }
+  }
+
 }
 @media only screen and (max-width: 596px) {
   #more-about{
     padding: 25px;
     .col-md-12{
       h2{
-        font-size: 23px;
+        font-size: 20px;
+        display: block;
+        padding: 10px;
       }
       .btn{
         padding: 10px 18px;
-        font-weight: 500;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 596px) {
-  #more-about{
-    .col-md-12{
-      h2{
-        font-size: 18px;
-      }
-      .btn{
-        padding:8px 15px;
-        font-weight: 500;
         font-size: 15px;
+        font-weight: 500;
+        margin-top: 5px;
       }
     }
   }

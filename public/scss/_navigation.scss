@@ -124,6 +124,9 @@ $dropDown       : false;
     }
     #mobile-logo{
       font-size: 20px;
+      &:hover{
+        color: $colDefault;
+      }
     }
     hr{
       background-color: $bgHighlight ;
